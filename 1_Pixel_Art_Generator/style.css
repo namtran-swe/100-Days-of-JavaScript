@@ -1,3 +1,10 @@
+:root {
+    --feldgrau: #3C493F;
+    --ash-gray: #B3BFB8;
+    --mint-cream: #F0F7F4;
+    --celadon: #A2E3C4; 
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,11 +13,11 @@
 }
 
 body {
-    background-color: blue;
+    background-color: var(--feldgrau);
 }
 
 .wrapper {
-    background-color: white;
+    background-color: var(--mint-cream);
     width: 80vmin;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -18,6 +25,11 @@ body {
     left: 50%;
     padding: 40px 20px;
     border-radius: 8px;
+}
+
+.header {
+    text-align: center;
+    margin: 0 auto 25px;
 }
 
 label {
@@ -38,10 +50,12 @@ span {
 }
 
 button {
-    background-color: blue;
+    background-color: var(--celadon);
     border: none;
     border-radius: 5px;
-    color: white;
+    color: var(--feldgrau);
+    font-size: 14px;
+    padding: 5px 15px;
 }
 
 input[type="color"] {
@@ -57,18 +71,18 @@ input[type="color"] {
 
 input[type="color"]::-webkit-color-swatch {
     border-radius: 8px;
-    border: 4px solid black;
+    border: 4px solid var(--celadon);
 }
 
 input[type="color"]::-moz-color-swatch {
     border-radius: 8px;
-    border: 4px solid black;
+    border: 4px solid var(--celadon);
 }
 
 .gridCol {
     height: 1em;
     width: 1em;
-    border: 1px solid #ddd;
+    border: 1px solid var(--feldgrau);
 }
 
 .gridRow {
