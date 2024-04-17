@@ -29,7 +29,7 @@ const initializer = () => {
         let option = document.createElement("option");
         option.value = value;
         option.innerHTML = value;
-        fontName.appendChild(option)
+        fontName.appendChild(option);
     });
 
     for (let i = 1; i <= 7; i++) {
@@ -64,7 +64,7 @@ linkButton.addEventListener("click", () => {
         modifyText(linkButton.id, false, userLink);
     } else {
         userLink = "http://" + userLink;
-        modifyText(linkButton.id, false, userLink)
+        modifyText(linkButton.id, false, userLink);
     }
 });
 

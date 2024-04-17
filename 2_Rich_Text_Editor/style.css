@@ -10,6 +10,19 @@ body {
     background-color: green;
 }
 
+.header-container {
+    background-color: #fff;
+    width: 90vmin;
+    padding: 25px 15px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 15%;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+    text-align: center;
+}
+
 .container {
     background-color: #fff;
     width: 90vmin;
